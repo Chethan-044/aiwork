@@ -1,0 +1,25 @@
+body { margin:0; font-family: Arial, Helvetica, sans-serif; }
+    #app { display:flex; height:100vh; }
+    #map { flex:1; background:#eaeaea; min-width: 60%; }
+    #sidebar { width:420px; padding:12px; box-shadow: -2px 0 6px rgba(0,0,0,0.15); background:#fff; overflow:auto; }
+    button{ padding:8px 12px; margin:6px 0; cursor:pointer; border:1px solid #444; background:white; border-radius:4px; }
+    input[type=text], textarea{ width:100%; padding:8px; box-sizing:border-box; border:1px solid #999; border-radius:4px; font-size:14px; }
+    textarea{ resize:vertical; }
+    label { font-weight:600; display:block; margin-top:8px }
+    .info { margin-top:8px; font-size:14px }
+    pre { background:#f7f7f7; padding:8px; overflow:auto }
+    .small { font-size:12px; color:#555 }
+    /* SVG graph styles */
+    .graph-wrap { margin-top:12px; text-align:center; }
+    svg.graph { width:360px; height:360px; border:1px solid #ddd; background:#fff; }
+    .edge { stroke:#bbb; stroke-width:4; stroke-linecap:round; opacity:0.6; transition: stroke 250ms, stroke-width 250ms, opacity 200ms; }
+    .node { fill:#fff; stroke:#333; stroke-width:2; transition: fill 200ms, stroke 200ms, r 200ms; cursor:default; }
+    .node-label { font-size:12px; text-anchor:middle; dominant-baseline:middle; pointer-events:none; fill:#000; }
+    .edge.dim { opacity:0.12; }
+    .node.dim { opacity:0.25; }
+    .edge.active { stroke:#007bff; stroke-width:6; opacity:1; }
+    .edge.alt { stroke:#ff8800; stroke-width:5; opacity:0.9; }
+    .node.active { fill:#007bff; stroke:#004aaf; r:12px; color:#fff; fill-opacity:0.95; }
+    .node.alt { fill:#ff8800; stroke:#b25a00; fill-opacity:0.95; }
+    .legend { font-size:12px; margin-top:8px; text-align:left; }
+    .legend span { display:inline-block; width:12px; height:12px; margin-right:6px; vertical-align:middle; }
