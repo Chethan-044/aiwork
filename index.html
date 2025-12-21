@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -49,7 +50,7 @@
       <button id="setEndBtn">Set End (click on map)</button>
 
       <div style="margin-top:8px">
-        <button id="routeBtn">Find Route </button>
+        <button id="routeBtn">Find Route</button>
         <button id="clearBtn">Clear Route</button>
       </div>
 
@@ -174,7 +175,7 @@ map.on("click", e => {
 
 // ORS routing (unchanged)
 async function callORSRoute(lat1, lon1, lat2, lon2) {
-  const API_KEY = "eyJvcmcdfghiOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImZjNDVhODk3MmMxZDRiMDc4ZjUzM2RiMTFkODU2MThhIiwiaCI6Im11cm11cjY0In0=";
+  const API_KEY = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImZjNDVhODk3MmMxZDRiMDc4ZjUzM2RiMTFkODU2MThhIiwiaCI6Im11cm11cjY0In0=";
 
   const url = "https://api.openrouteservice.org/v2/directions/driving-car/geojson";
   const body = { coordinates: [[lon1, lat1], [lon2, lat2]] };
@@ -338,5 +339,3 @@ document.getElementById("runUCS").onclick = () => {
 
 </body>
 </html>
-
-
